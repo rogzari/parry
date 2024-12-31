@@ -1,0 +1,89 @@
+_G.Settings = {
+    ["AutoParry"] = {
+        Enabled = true,
+        Debug = true,
+
+        ["Main"] = {
+            Range = 12.5,
+            Delay = 0, 
+            Chance = 100,
+            RandomChance = false,
+            Method = "Sound", -- Sound // Animation, sound will be always more accurate, use animation for legit porpuses
+            CheckIfLooking = false,
+            Threshold = 0.15,
+        },
+
+        ["Aimbot"] = {
+            Enabled = false,
+            Keybind = "LeftAlt",
+            Hold = true,
+            Hitpart = "Head",
+            X = 0.01,
+            Y = 0.01,
+        },
+
+        ["Miscellaneous"] = {
+            HitboxExpander = true,
+            ShowHBE = false,
+            ShowRange = false,
+
+            AntiAim = {
+                Enabled = false,
+                Frequency = 0.0003,
+            },
+
+            UnlockFPS = {
+                Enabled = false,
+                FPScap = 144,
+            },
+        },
+
+        ["Anti"] = {
+            Enabled = true, 
+            Delay = 0.42,
+            Range = 50,
+        },
+
+        ["Big"] = {
+            Settings = {
+                Head = false,
+                Torso = false,
+                HSize = 5.7, -- anything bigger than 10 could ban you
+                TSize = 5.7,
+            }
+        },
+
+        ["Alternative"] = {
+            AltBypass = false, 
+            KDR = 1.5, 
+        },
+
+        ["Mistake"] = {
+            Enabled = false,
+            Range = 2,
+            Chance = 0.5,
+        },
+
+        ["Custom"] = {
+            Sounds = {
+                Enabled = false, -- All have Normal option
+                Hit = "Rust", -- TF2 // Damn // ClashR // Rust // HAHA // Bozo // CSGO // Boink // Fart // Rage
+                Parry = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Kill = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Explosive = "BOINK", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Nuke = "TF2", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+                Dash = "CSGO", -- TF2 // RUST //  CSGO // FART // BOINK // RAGE
+            },
+        },
+
+        ["Panic"] = {
+            Enabled = false,
+            Keybind = "L",
+            HoldMode = {
+                Enabled = false, -- no Sound method support because i forgor..
+                Keybind = "C",
+            },
+        },
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WeLoveVast/stremeable.nettable/refs/heads/main/update1.07"))()
