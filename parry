@@ -4,7 +4,7 @@ _G.Settings = {
         Debug = true,
 
         ["Main"] = {
-            Range = 12.5,
+            Range = 9,
             Delay = 0, 
             Chance = 100,
             RandomChance = false,
@@ -40,7 +40,7 @@ _G.Settings = {
 
         ["Anti"] = {
             Enabled = true, 
-            Delay = 0.42,
+            Delay = 0.10,
             Range = 50,
         },
 
